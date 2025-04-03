@@ -46,6 +46,10 @@ body {
   animation: mobileNav 0.3s ease;
 }
 
+.header__nav-button:has(> .header__toggle:checked) {
+  background-image: url(../../images/icon-close.svg);
+}
+
 @keyframes mobileNav {
   from {
     opacity: 0;

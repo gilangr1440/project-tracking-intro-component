@@ -52,6 +52,10 @@ body {
         animation: mobileNav 0.3s ease;
       }
 
+      @at-root &:has(> .header__toggle:checked) {
+        background-image: url(../../images/icon-close.svg);
+      }
+
       @keyframes mobileNav {
         from {
           opacity: 0;
