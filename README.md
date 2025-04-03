@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/project-tracking-intro-component-m15gj9U9HQ)
+- Live Site URL: [live site URL here](https://gilangr1440.github.io/project-tracking-intro-component/)
 
 ## My process
 
