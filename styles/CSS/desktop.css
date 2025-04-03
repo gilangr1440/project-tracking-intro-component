@@ -1,0 +1,20 @@
+.header {
+  margin-bottom: 30px;
+}
+
+.text-section__title {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.text-section__desc {
+  margin-bottom: 40px;
+}
+
+.text-section__button {
+  width: 180px;
+}
+
+.illustration__image {
+  width: 138%;
+}/*# sourceMappingURL=desktop.css.map */

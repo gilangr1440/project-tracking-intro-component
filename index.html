@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/CSS/css-reset.css" />
+    <link rel="stylesheet" href="styles/CSS/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/CSS/tablet.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="styles/CSS/laptop.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/CSS/laptopL.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1440px)" href="styles/CSS/desktop.css" />
+
+    <title>Frontend Mentor | Project tracking intro component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-shape"></div>
+    <header class="header">
+      <a href="#" class="header__home">
+        <img src="images/logo.svg" alt="logo" class="header__logo" />
+      </a>
+      <nav class="header__nav-container">
+        <a href="#" class="header__nav-link">Product</a>
+        <a href="#" class="header__nav-link">Features</a>
+        <a href="#" class="header__nav-link">Pricing</a>
+        <div class="header__bullet"></div>
+        <a href="#" class="header__nav-link header__nav-link_login">Login</a>
+      </nav>
+      <label for="toggle" class="header__nav-button">
+        <input type="checkbox" id="toggle" name="toggle" class="header__toggle" />
+      </label>
+      <nav class="nav-mobile">
+        <a href="#" class="nav-mobile__link">Product</a>
+        <a href="#" class="nav-mobile__link">Features</a>
+        <a href="#" class="nav-mobile__link">Pricing</a>
+        <hr class="nav-mobile__line" />
+        <a href="#" class="nav-mobile__link nav-mobile__link_login">Login</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="text-section">
+        <p class="text-section__new-monograph"><span class="text-section__new">New</span> Monograph Dashboard</p>
+        <h1 class="text-section__title">
+          Powerful insights <br />
+          into your team
+        </h1>
+        <p class="text-section__desc">
+          Project planning and time tracking <br />
+          for agile teams
+        </p>
+        <div class="text-section__cta">
+          <a href="#" role="button" class="text-section__button">Schedule a demo</a>
+          <span class="text-section__button-desc">to see a live preview</span>
+        </div>
+      </section>
+
+      <section class="illustration">
+        <img src="images/illustration-devices.svg" alt="illustration" class="illustration__image" />
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/gilangr1440/">Gilang Ramadhan</a>.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.background-shape {
+  height: 95vw;
+}
+
+.header {
+  height: 150px;
+}
+.header__logo {
+  height: 50px;
+}
+
+.header__nav-button {
+  height: 30px;
+}
+
+.text-section__new-monograph {
+  font-size: 2rem;
+  gap: 20px;
+}
+.text-section__new {
+  width: 100px;
+  padding: 8px 0;
+}
+
+.text-section__title {
+  font-size: 4.5rem;
+}
+
+.text-section__desc {
+  font-size: 2rem;
+}
+
+.text-section__button {
+  font-size: 1.7rem;
+  width: 280px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.text-section__button-desc {
+  font-size: 1.7rem;
+}
+
+footer {
+  margin: 20px 0;
+}
+footer .attribution {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=tablet.css.map */

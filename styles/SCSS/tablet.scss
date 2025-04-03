@@ -1,0 +1,64 @@
+@import "variables";
+
+body {
+  @at-root .background-shape {
+    height: 95vw;
+  }
+
+  @at-root .header {
+    height: 150px;
+
+    @at-root .header__home {
+      @at-root .header__logo {
+        height: 50px;
+      }
+    }
+
+    @at-root .header__nav-button {
+      height: 30px;
+    }
+  }
+
+  @at-root .main {
+    @at-root .text-section {
+      @at-root .text-section__new-monograph {
+        font-size: 2rem;
+        gap: 20px;
+
+        @at-root .text-section__new {
+          width: 100px;
+          padding: 8px 0;
+        }
+      }
+
+      @at-root .text-section__title {
+        font-size: 4.5rem;
+      }
+
+      @at-root .text-section__desc {
+        font-size: 2rem;
+      }
+
+      @at-root .text-section__cta {
+        @at-root .text-section__button {
+          font-size: 1.7rem;
+          width: 280px;
+          height: 80px;
+          border-radius: 10px;
+        }
+
+        @at-root .text-section__button-desc {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  @at-root footer {
+    margin: 20px 0;
+
+    .attribution {
+      font-size: 1.5rem;
+    }
+  }
+}

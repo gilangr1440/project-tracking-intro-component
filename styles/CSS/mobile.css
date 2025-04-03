@@ -1,0 +1,199 @@
+body {
+  max-width: 100vw;
+}
+.background-shape {
+  display: block;
+  width: 50vw;
+  height: 400px;
+  background: hsl(207, 33%, 95%);
+  position: absolute;
+  inset: 0 0 auto auto;
+  border-radius: 0 0 0 50px;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 10%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+}
+.header__logo {
+  height: 30px;
+}
+
+.header__nav-container {
+  display: none;
+}
+
+.header__nav-button {
+  background-color: transparent;
+  background-image: url(../../images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  aspect-ratio: 24/16;
+  height: 20px;
+  border: none;
+}
+.header__nav-button:has(> .header__toggle:checked) + .nav-mobile {
+  display: flex;
+  opacity: 1;
+  animation: mobileNav 0.3s ease;
+}
+
+@keyframes mobileNav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.header__toggle {
+  display: none;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  position: absolute;
+  inset: 100% 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0;
+}
+.nav-mobile__link {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  color: hsl(230, 29%, 20%);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.nav-mobile__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-mobile__line {
+  border-color: rgba(160, 161, 172, 0.3);
+  border-width: 0.5px;
+  width: 100%;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
+  gap: 50px;
+}
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10%;
+}
+.text-section__new-monograph {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  color: hsl(231, 7%, 65%);
+}
+.text-section__new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(230, 29%, 20%);
+  color: hsl(207, 33%, 95%);
+  font-weight: 600;
+  width: 50px;
+  padding: 5px 0;
+  border-radius: 50px;
+  letter-spacing: 1px;
+}
+
+.text-section__title {
+  font-size: 2.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(230, 29%, 20%);
+}
+
+.text-section__desc {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  color: hsl(230, 29%, 20%);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.text-section__cta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.text-section__button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 100%, 68%);
+  color: hsl(207, 33%, 95%);
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.text-section__button:hover {
+  background-color: rgba(255, 92, 92, 0.8);
+}
+
+.text-section__button-desc {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 2px;
+}
+
+.illustration {
+  height: 80vw;
+  position: relative;
+  overflow: hidden;
+}
+.illustration__image {
+  position: absolute;
+  width: 136%;
+}
+
+footer {
+  margin: 10px 0;
+  font-family: "Barlow", sans-serif;
+}/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,32 @@
+@import "variables";
+
+body {
+  @at-root .header {
+    margin-bottom: 30px;
+  }
+
+  @at-root .main {
+    @at-root .text-section {
+      @at-root .text-section__title {
+        font-size: 4rem;
+        margin-bottom: 10px;
+      }
+
+      @at-root .text-section__desc {
+        margin-bottom: 40px;
+      }
+
+      @at-root .text-section__cta {
+        @at-root .text-section__button {
+          width: 180px;
+        }
+      }
+    }
+
+    @at-root .illustration {
+      @at-root .illustration__image {
+        width: 138%;
+      }
+    }
+  }
+}

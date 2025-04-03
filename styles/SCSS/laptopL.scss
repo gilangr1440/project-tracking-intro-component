@@ -1,0 +1,13 @@
+@import "variables";
+
+body {
+  @at-root .header {
+    margin-bottom: 20px;
+
+    @at-root .header__home {
+      @at-root .header__logo {
+        height: 30px;
+      }
+    }
+  }
+}
